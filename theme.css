@@ -1,0 +1,92 @@
+/* Customize root variables for majority of changes. Others can be found below */
+:root {
+    --font-color: #677583;
+    --primary-color: rgb(10, 17, 59);
+    --background: url(https://static.zerochan.net/Megumin.full.1985815.jpg)
+}
+
+body {
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+p {
+    color: var(--font-color) !important;
+}
+
+p span{
+    color: var(--font-color) !important; 
+}
+
+.s-poll-option-title {
+    color: var(--font-color) !important; 
+}
+
+.comment-body-wrapper {
+    color: var(--font-color) !important;
+}
+
+/* Standard opacity of 0.25 to make the Schoology GUI less visible over your chosen background */
+#main {
+    opacity: 0.25;
+    transition: 0.75s cubic-bezier(0,.1,.05,.97);
+}
+
+/* Hover effect for making Schoology GUI visible when needed */
+#main:hover {
+    opacity: 0.9;
+}
+
+#main-inner {
+    opacity: 0.25;
+    transition: 0.75s cubic-bezier(0,.1,.05,.97);
+}
+
+#main-inner:hover {
+    opacity: 0.9;
+}
+
+.theme-2016-layout #main, .theme-2016-layout #right-column-inner > div:not(:empty) {
+    background: var(--primary-color);
+}
+
+.s-enable-course-dashboard.theme-2016-layout #main {
+    margin-top: 1%;
+    background: var(--primary-color) !important;
+}
+
+.s-enable-course-dashboard.theme-2016-layout #home-feed-container {
+    background: var(--primary-color) !important;
+}
+
+.feed-comments {
+    background: var(--primary-color) !important;
+}
+
+#right-column {
+    opacity: 0.15;
+    transition: 0.75s cubic-bezier(0,.1,.05,.97);
+}
+
+#right-column:hover {
+    opacity: 0.9;
+}
+
+._1IGEH:focus:not(:active), ._1oxpz:hover:not(:active), ._1Z0RM, .Dkh_K:active {
+    background-color: var(--primary-color);
+}
+
+._2UdSL {
+    border-color: var(--primary-color);
+}
+
+.sgy-card {
+    background-color: var(--primary-color) !important;
+    border-color:  var(--primary-color) !important;
+}
+
+.course-dashboard .sgy-card-lens {
+    background-color: rgba(0, 0, 0, 0);
+}
